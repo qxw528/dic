@@ -1,0 +1,41 @@
+<logisticsEventsRequest>
+<logisticsEvent>
+<eventHeader>
+<eventType> WMS_PACKAGE_STOCKIN_INFO </eventType>
+<eventTime>2013-08-24 08:00:00</eventTime>
+<eventSource> 360ZEBRA</eventSource>
+<eventTarget> CP_PLATFORM</eventTarget></eventHeader>
+<eventBody>
+<packageDetail>
+<packages>
+<package>
+<segmentCode>BANMA-00001</segmentCode>
+<packageCode>1Z646546545646545</packageCode>
+<refValue>123456</refValue>
+<inBoundTime>2013-8-24 15:23</inBoundTime>
+<qty>1</qty>
+<weight>1</weight>
+<width></width>
+<length></length>
+<height></height>
+<lUnit></lUnit>
+<remark></remark>
+</package>
+<package>
+<segmentCode>BANMA-00001</segmentCode>
+<packageCode>1Z646546545646545</packageCode>
+<refValue>123456</refValue>
+<inBoundTime>2013-8-24 15:23</inBoundTime>
+<qty>1</qty>
+<weight>1</weight>
+<width></width>
+<length></length>
+<height></height>
+<lUnit></lUnit>
+<remark></remark>
+</package>
+</packages>
+</packageDetail>
+</eventBody>
+</logisticsEvent>
+</logisticsEventsRequest>

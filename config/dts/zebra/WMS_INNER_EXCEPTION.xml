@@ -1,0 +1,30 @@
+<logisticsEventsRequest>
+<logisticsEvent>
+<eventHeader>
+<eventType> WMS_STOCKIN_INFO </eventType>
+<eventTime>2013-08-24 08:00:00</eventTime>
+<eventSource> BANMA-0001 </eventSource>
+<eventTarget> CP_PARTNERFLAT </eventTarget>
+</eventHeader>
+<eventBody>
+<tradeDetail>
+<tradeOrders>
+<tradeOrder>
+<tradeOrderId>72364825924</tradeOrderId>
+</tradeOrder>
+</tradeOrders>
+</tradeDetail>
+<logisticsDetail>
+<logisticsOrders>
+<logisticsOrder>
+<mailNo></mailNo>
+<poNo>LP682343244</poNo><occurTime></occurTime>
+<logisticsRemark>不能接</logisticsRemark>
+<logisticsErrorImgUrl>http://xx.com/img.jpg</logisticsErrorImgUrl>
+<logisticsCode>PACKAGE_DAMAGED </logisticsCode>
+</logisticsOrder>
+</logisticsOrders>
+</logisticsDetail>
+</eventBody>
+</logisticsEvent>
+</logisticsEventsRequest>

@@ -1,0 +1,22 @@
+<logisticsEventsRequest>
+	<logisticsEvent>
+	<eventHeader>
+	<eventType>WMS_GOODS_SIGN_INFO</eventType>
+	<eventTime>2014-05-04 10:39:54</eventTime>
+	<eventSource>BANMA-0001</eventSource>
+	<eventTarget>CP_PARTNERFLAT</eventTarget>
+	</eventHeader>
+	<eventBody>
+	<logisticsDetail>
+	<logisticsOrders>
+	<logisticsOrder>
+	<occurTime>2014-5-04 10:39:54</occurTime>
+	<mailNo>1111111</mailNo>
+	<logisticsRemark>包裹签收成功</logisticsRemark>
+	<logisticsCode> SUCCESS </logisticsCode>
+	</logisticsOrder>
+	</logisticsOrders>
+	</logisticsDetail>
+	</eventBody>
+	</logisticsEvent>
+</logisticsEventsRequest>

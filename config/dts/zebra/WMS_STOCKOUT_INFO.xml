@@ -1,0 +1,31 @@
+<logisticsEventsRequest>
+<logisticsEvent>
+<eventHeader>
+<eventType> WMS_STOCKOUT_INFO </eventType>
+<eventTime>2013-08-24 08:00:00</eventTime>
+<eventSource> BANMA-0001 </eventSource>
+<eventTarget> CP_PARTNERFLAT </eventTarget>
+</eventHeader>
+<eventBody>
+<tradeDetail>
+<tradeOrders>
+<tradeOrder>
+<tradeOrderId>72364825924</tradeOrderId>
+</tradeOrder>
+</tradeOrders>
+</tradeDetail>
+<logisticsDetail>
+<logisticsOrders>
+<logisticsOrder>
+<segmentCode>DOMESTIC</segmentCode>
+<poNo>LP682343244</poNo>
+<occurTime></occurTime>
+<carrierCode>国内运输公司</carrierCode>
+<mailNo>927497532</mailNo>
+<logisticsRemark>重庆：重庆 EMS</logisticsRemark>
+<logisticsCode>STOCKOUT</logisticsCode>
+</logisticsOrder></logisticsOrders>
+</logisticsDetail>
+</eventBody>
+</logisticsEvent>
+</logisticsEventsRequest>

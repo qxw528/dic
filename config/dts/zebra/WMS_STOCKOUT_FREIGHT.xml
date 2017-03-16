@@ -1,0 +1,32 @@
+<logisticsEventsRequest>
+<logisticsEvent>
+<eventHeader>
+<eventType> WMS_STOCKOUT_FREIGHT </eventType>
+<eventTime>2013-08-24 08:00:00</eventTime>
+<eventSource> BANMA-0001 </eventSource>
+<eventTarget> CP_PARTNERFLAT</eventTarget>
+</eventHeader><eventBody>
+<tradeDetail>
+<tradeOrders>
+<tradeOrder>
+<tradeOrderId>72364825924</tradeOrderId>
+</tradeOrder>
+</tradeOrders>
+</tradeDetail>
+<logisticsDetail>
+<logisticsOrders>
+<logisticsOrder>
+<segmentCode>DOMESTIC</segmentCode>
+<poNo>LP682343244</poNo>
+<occurTime></occurTime>
+<carrierCode>承运商编码</carrierCode>
+<mailNo>927497532</mailNo>
+<logisticsFreight>12</logisticsFreight>
+<logisticsUnit>USD</logisticsUnit >
+<logisticsRemark>就这几斤</logisticsRemark>
+</logisticsOrder>
+</logisticsOrders>
+</logisticsDetail>
+</eventBody>
+</logisticsEvent>
+</logisticsEventsRequest>
