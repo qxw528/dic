@@ -6,7 +6,7 @@
  * Time: 3:57 PM
  */
 
-namespace com\dic\qiusir\site;
+namespace com\dic\qiusir\site\dss\request;
 
 
 abstract class AbstractRequest
@@ -15,20 +15,24 @@ abstract class AbstractRequest
     protected $sign;
     protected $version;
     protected $method;
+    protected $inputCharset;
+    protected $signType;
 
     public function __construct()
     {
-        $this->timestamp = date("yyyy-MM-dd HH:ii:ss");
+        $this->timestamp = date("Y-m-d H:i:s");
         $this->version = "1.0";
+        $this->inputCharset = 'utf-8';
+        $this->signType = 'md5';
     }
 
 
     public function getSysParams() :array {
         $sysParams = array(
-            'method' => $this->method,
             'timestamp' => $this->timestamp,
             'version' => $this->version,
-            'signType' =>'MD5'
+            'signType' => $this->signType,
+            'inputCharset'=>$this->inputCharset
         );
         return $sysParams;
     }

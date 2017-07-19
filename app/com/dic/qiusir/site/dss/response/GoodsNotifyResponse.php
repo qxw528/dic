@@ -11,7 +11,7 @@ namespace com\dic\qiusir\site\dss\response;
 
 use com\dic\qiusir\site\Response;
 
-class GoodsAddNotifyResponse extends NotifyResponse implements Response
+class GoodsNotifyResponse extends NotifyResponse implements Response
 {
     public $goodsId;
 
@@ -30,5 +30,5 @@ class GoodsAddNotifyResponse extends NotifyResponse implements Response
     {
         $this->goodsId = $goodsId;
     }
-    
+
 }

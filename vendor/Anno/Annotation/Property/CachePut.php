@@ -11,5 +11,6 @@ namespace Anno\Annotation\Property;
 
 class CachePut
 {
-
+    public $value;
+    public $key;
 }

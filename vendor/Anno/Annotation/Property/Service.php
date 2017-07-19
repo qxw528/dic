@@ -6,7 +6,7 @@
  * Time: 4:04 PM
  */
 
-namespace Annotation\Property;
+namespace Anno\Annotation\Property;
 
 
 abstract class Service

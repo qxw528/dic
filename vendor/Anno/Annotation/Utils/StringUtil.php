@@ -6,7 +6,7 @@
  * Time: 10:02 AM
  */
 
-namespace Annotation\Utils;
+namespace Anno\Annotation\Utils;
 
 
 class StringUtil

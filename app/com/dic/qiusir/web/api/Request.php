@@ -9,7 +9,9 @@
 namespace com\dic\qiusir\web\api;
 
 
+use com\dic\qiusir\site\Response;
+
 interface Request
 {
-
+   function request();
 }

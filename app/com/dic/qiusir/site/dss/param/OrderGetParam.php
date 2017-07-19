@@ -9,7 +9,15 @@
 namespace com\dic\qiusir\site\dss\param;
 
 
-class OrderGetParam
+class OrderGetParam extends Param
 {
+    public $orderCode;
 
+    /**
+     * OrderGetParam constructor.
+     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
 }

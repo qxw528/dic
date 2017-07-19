@@ -11,5 +11,19 @@ namespace com\dic\framework\container;
 
 class Container
 {
+    public static $container;
 
+
+
+    public static function getSingleContainer():array {
+        if (!self::$container) {
+            self::$container = array();
+        }
+        return self::$container;
+    }
+
+
+    public static function clearAll() {
+        self::$container = null;
+    }
 }

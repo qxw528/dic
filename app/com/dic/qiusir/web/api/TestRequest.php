@@ -11,5 +11,7 @@ namespace com\dic\qiusir\web\api;
 
 class TestRequest
 {
-
+    public function request() {
+        $comment = "@Resource(type='UserModel')";
+    }
 }

@@ -15,10 +15,26 @@ class App {
             $msgType = $_REQUEST['msgType'] ?? 'WMS_CHECK_ORDER';
             $className = 'com\dic\qiusir\web\api\\'.$api;
             $reflectClass = new \ReflectionClass($className);
-            $reflectMehtod = new \ReflectionMethod($className,'request');
+            $method = $_REQUEST['md'] ?? 'request';
+            if ($this->checkClassMethod($reflectClass,$method)) {
+                $reflectMethod = new \ReflectionMethod($className,$method);
+            } else {
+                $reflectMethod = new \ReflectionMethod($className,'request');
+            }
             $classInstance = new $className();
-            $reflectMehtod->invokeArgs($classInstance,array(strtoupper($msgType)));
+            $result = $reflectMethod->invokeArgs($classInstance,array(strtoupper($msgType)));
+            echo json_encode($result,1);
         }
+    }
+
+    public function checkClassMethod(\ReflectionClass $reflectionClass,string $method):bool {
+        $methods = $reflectionClass->getMethods();
+        foreach ($methods as $methodName) {;
+            if ($methodName->getName() === $method) {
+                return true;
+            }
+        }
+        return false;
     }
 }
 

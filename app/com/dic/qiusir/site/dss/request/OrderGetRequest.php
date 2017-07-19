@@ -9,25 +9,49 @@
 namespace com\dic\qiusir\site\dss\request;
 
 
-use com\dic\qiusir\site\AbstractRequest;
 use com\dic\qiusir\site\Request;
 
-class DssRequest extends AbstractRequest implements Request
+class OrderGetRequest extends AbstractRequest implements Request
 {
-    
+    private $orderCode;
 
-    function getAppParams()
+    public function getAppParams():array
     {
         // TODO: Implement getAppParams() method.
+        return array(
+            'orderCode' => $this->orderCode,
+            'method' =>$this->getApiMethod()
+        );
     }
 
-    function getResponseClass()
+    public function getResponseClass()
     {
         // TODO: Implement getResponseClass() method.
+        return 'com\dic\qiusir\site\dss\response\OrderGetResponse';
     }
 
-    function getApiMethod()
+    function getApiMethod():string
     {
         // TODO: Implement getApiMethod() method.
+        return 'com.dss.order.get.OrderGetRequest';
     }
+
+
+    /**
+     * @return mixed
+     */
+    public function getOrderCode()
+    {
+        return $this->orderCode;
+    }
+
+    /**
+     * @param mixed $orderCode
+     */
+    public function setOrderCode($orderCode)
+    {
+        $this->orderCode = $orderCode;
+    }
+
+
 }

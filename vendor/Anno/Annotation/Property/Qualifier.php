@@ -6,7 +6,7 @@
  * Time: 4:41 PM
  */
 
-namespace Annotation\Property;
+namespace Anno\Annotation\Property;
 
 
 abstract class Qualifier

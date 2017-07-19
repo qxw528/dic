@@ -6,7 +6,7 @@
  * Time: 5:08 PM
  */
 
-namespace Annotation\Utils;
+namespace Anno\Annotation\Utils;
 
 
 class Arrays

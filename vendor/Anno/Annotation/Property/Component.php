@@ -6,7 +6,7 @@
  * Time: 4:05 PM
  */
 
-namespace Annotation\Property;
+namespace Anno\Annotation\Property;
 
 
 abstract class Component

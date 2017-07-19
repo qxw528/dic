@@ -6,11 +6,11 @@
  * Time: 4:15 PM
  */
 
-namespace Annotation\Document;
+namespace Anno\Annotation\Document;
 
 
-use Annotation\Utils\Arrays;
-use Annotation\Utils\FileUtil;
+use Anno\Annotation\Utils\Arrays;
+use Anno\Annotation\Utils\FileUtil;
 
 class Analysis
 {

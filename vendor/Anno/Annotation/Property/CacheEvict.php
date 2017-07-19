@@ -11,5 +11,6 @@ namespace Anno\Annotation\Property;
 
 class CacheEvict
 {
-
+    public $value;
+    public $key;
 }

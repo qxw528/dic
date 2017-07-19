@@ -9,7 +9,9 @@
 namespace com\dic\qiusir\site\dss\response;
 
 
-class CommonResponse extends NotifyResponse
+use com\dic\qiusir\site\Response;
+
+class CommonNotifyResponse extends NotifyResponse implements Response
 {
 
 }

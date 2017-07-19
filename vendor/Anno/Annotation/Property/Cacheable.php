@@ -9,9 +9,7 @@
 namespace Anno\Annotation\Property;
 
 
-abstract class Cache
+abstract class Cacheable
 {
     public $value;
-    public $key;
-    public $condition;
 }

@@ -6,7 +6,7 @@
  * Time: 4:08 PM
  */
 
-namespace Annotation\Property;
+namespace Anno\Annotation\Property;
 
 
 abstract class Modified

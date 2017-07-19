@@ -13,7 +13,7 @@ use com\dic\qiusir\utils\client\constant\Constant;
 
 class CurlUtils
 {
-    public static $TIMEOUT = 120;
+    public static $TIMEOUT = 120000;
     public static $AGENT = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)';
 
     /**
@@ -136,10 +136,10 @@ class CurlUtils
         );
         $curl = curl_init();
         curl_setopt($curl,CURLOPT_URL,$url);
-        curl_setopt($curl,CURLOPT_POST,count($params));
+        curl_setopt($curl,CURLOPT_POST,1);
         curl_setopt($curl,CURLOPT_POSTFIELDS,http_build_query($params));
         curl_setopt($curl,CURLOPT_RETURNTRANSFER,1);
-        curl_setopt($curl,CURLOPT_TIMEOUT,self::$TIMEOUT);
+        //curl_setopt($curl,CURLOPT_TIMEOUT,self::$TIMEOUT);
         $result = curl_exec($curl);
         if ($result === false) {
             $returnArray['code'] = Constant::ERROR;

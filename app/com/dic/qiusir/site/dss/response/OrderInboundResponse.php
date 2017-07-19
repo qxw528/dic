@@ -9,7 +9,9 @@
 namespace com\dic\qiusir\site\dss\response;
 
 
-class OrderInboundReponse
-{
+use com\dic\qiusir\site\Response;
 
+class OrderInboundResponse extends AbstractResponse implements Response
+{
+    
 }

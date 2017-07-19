@@ -9,7 +9,7 @@
 namespace com\dic\qiusir\site;
 
 
-class Client
+interface Client
 {
-
+    function execute(Request $request):Response;
 }

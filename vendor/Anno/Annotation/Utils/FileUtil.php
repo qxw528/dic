@@ -6,7 +6,7 @@
  * Time: 4:45 PM
  */
 
-namespace Annotation\Utils;
+namespace Anno\Annotation\Utils;
 
 
 class FileUtil

@@ -11,5 +11,8 @@ namespace com\dic\qiusir\site;
 
 interface Request
 {
-
+    function getAppParams();
+    function getResponseClass();
+    function getApiMethod();
+    function getSysParams();
 }
