@@ -2,14 +2,14 @@
 /**
  * Created by PhpStorm.
  * User: qiusir
- * Date: 3/24/17
- * Time: 4:04 PM
+ * Date: 3/28/17
+ * Time: 4:44 PM
  */
 
 namespace Annotation\Property;
 
 
-class Service
+abstract class Bean
 {
-
+    public $name;
 }

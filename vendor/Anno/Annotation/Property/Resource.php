@@ -3,13 +3,14 @@
  * Created by PhpStorm.
  * User: qiusir
  * Date: 3/24/17
- * Time: 4:05 PM
+ * Time: 4:01 PM
  */
 
 namespace Annotation\Property;
 
 
-class Component
+abstract class Resource
 {
-
+    public $name;
+    public $type;
 }

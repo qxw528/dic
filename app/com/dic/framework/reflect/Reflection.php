@@ -37,6 +37,15 @@ class Reflection
     }
 
     /**
+     *
+     */
+    public function getMethodParameters(string $className,string $methodName):array {
+        $reflector = new \ReflectionClass($className);
+        $parameters = $reflector->getMethod($methodName)->getParameters();
+        return $parameters;
+    }
+
+    /**
      * get the properties's comment  of class
      * @param string $className
      * @return array
