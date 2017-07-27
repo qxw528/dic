@@ -31,4 +31,20 @@ require __DIR__.'/bootstrap/autoload.php';
 | and wonderful application we have prepared for them.
 |
 */
+require __DIR__.'/vendor/Goaop/ParserReflection/bootstrap.php';
+
+require __DIR__ . '/bootstrap/aspect/ApplicationAspectKernel.php';
+
+$applicationAspectKernel = ApplicationAspectKernel::getInstance();
+
+$applicationAspectKernel->init(array(
+    'debug' => true,
+    'cacheDir' => __DIR__.'/cache/for/aop',
+    'appDir' => __DIR__.'/app',
+    'includePaths' => array(
+        __DIR__.'/app',
+        __DIR__.'/Demo/Demo'
+    )
+));
+
 require __DIR__.'/bootstrap/app.php';

@@ -9,7 +9,14 @@
 namespace com\dic\qiusir\service;
 
 
-class UserService
+class UserService extends DecoratorService
 {
 
+    public function findById(int $id) :int {
+        return $id;
+    }
+
+    public function findByName(string $name) :string {
+        return $name;
+    }
 }

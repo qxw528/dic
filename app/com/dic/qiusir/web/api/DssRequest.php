@@ -9,6 +9,8 @@
 namespace com\dic\qiusir\web\api;
 
 
+use com\dic\qiusir\service\CacheUserService;
+use com\dic\qiusir\service\UserService;
 use com\dic\qiusir\site\dss\DssClient;
 use com\dic\qiusir\site\dss\request\GoodsAddRequest;
 use com\dic\qiusir\site\dss\request\OrderGetRequest;
@@ -16,6 +18,7 @@ use com\dic\qiusir\site\dss\request\OrderInboundRequest;
 use com\dic\qiusir\site\dss\request\OrderLoadingRequest;
 use com\dic\qiusir\site\dss\request\UpdateInventoryRequest;
 use com\dic\qiusir\site\dss\request\WarningInventoryRequest;
+use Demo\Example\LoggingDemo;
 
 class DssRequest implements Request
 {
@@ -68,6 +71,15 @@ class DssRequest implements Request
         $dssClient = new DssClient(self::IPURL."/api/v1/notify/tope/warninginventory.do",'','');
         $response = $dssClient->notify($warningInventoryRequest);
         return $response;
+    }
+
+    public function decoratorTest() {
+/*        $userService = new CacheUserService();
+        //echo $userService->findById(1);
+        //$userService->findByName("harris");
+        $userService->findCacheById(1);*/
+        $loggingDemo = new LoggingDemo();
+        $loggingDemo->execute("task1");
     }
 
 }

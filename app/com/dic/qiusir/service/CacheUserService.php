@@ -9,7 +9,13 @@
 namespace com\dic\qiusir\service;
 
 
-class CacheUserService
+class CacheUserService extends UserService
 {
-
+    /**
+     * @param int $id
+     * @return int
+     */
+    public function findCacheById(int $id):int {
+        return $this->findById($id);
+    }
 }

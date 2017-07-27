@@ -7,6 +7,11 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'com\\' => array($baseDir . '/app/com'),
-    'Icicle\\'=>array($baseDir.'/vendor/Icicle'),
-    'Anno\\'=>array($baseDir.'/vendor/Anno')
+    //'Icicle\\'=>array($baseDir.'/vendor/Icicle'),
+    //'Anno\\'=>array($baseDir.'/vendor/Anno'),
+    'Go\\'=>array($baseDir.'/vendor/Goaop'),
+    'Doctrine\\'=>array($baseDir.'/vendor/Doctrine'),
+    'Dissect\\'=>array($baseDir.'/vendor/Dissect'),
+    'PhpParser\\'=>array($baseDir.'/vendor/PhpParser'),
+    'Demo\\'=>array($baseDir.'/Demo/Demo'),
 );

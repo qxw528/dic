@@ -39,7 +39,7 @@ class ContainerHelper
     /**
      * Clear all the container
      */
-    public static function ClearAll() {
+    public static function clearAll() {
         Container::clearAll();
     }
 
